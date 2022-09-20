@@ -18,7 +18,17 @@ streets.addTo(map);
 // Accessing the airport GeoJSON URL
 let airportData = "https://raw.githubusercontent.com/MarckBoge/Mapping_Earthquakes/Mapping_GeoJSON_Points/majorAirports.json";
 
-  
+
+
+/* Grabbing our GeoJSON data.
+d3.json(airportData).then(function(data) {
+    console.log(data);
+  // Creating a GeoJSON layer with the retrieved data.
+  L.geoJSON(data).addTo(map);
+}); */
+
+
+//----SKILL DRILL-----//
 // Grabbing our GeoJSON data.
 d3.json(airportData).then(function(data) {
     console.log(data);
